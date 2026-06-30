@@ -14,9 +14,11 @@
   },
   "categories": [
     {
-      "name": "dummy",
-      "description": "Dummy nodes",
-      "icon": "box"
+      "dummy": {
+        "title": "Dummy",
+        "description": "Dummy nodes",
+        "icon": "box"
+      }
     }
   ],
   "nodes": [
