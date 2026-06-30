@@ -1,0 +1,23 @@
+{
+  "name": "Griptape Nodes X Nuke Workflows",
+  "library_schema_version": "0.6.0",
+  "settings": [],
+  "metadata": {
+    "author": "Kieran West",
+    "description": "Nuke-specific workflow nodes for Griptape Nodes",
+    "library_version": "0.1.0",
+    "engine_version": "0.86.0",
+    "tags": ["Griptape", "Nuke", "VFX", "Workflows"],
+    "dependencies": {
+      "pip_dependencies": []
+    }
+  },
+  "categories": [],
+  "nodes": [],
+  "workflows": [
+    "workflows/templates/nuke_upscale_workflow.py",
+    "workflows/templates/nuke_flux_inpainting.py",
+    "workflows/templates/nuke_OpenPose_Video_Detection.py",
+    "workflows/templates/nuke_WAN_Reference_to_Video.py"
+  ]
+}
