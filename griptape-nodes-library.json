@@ -14,11 +14,11 @@
   },
   "categories": [
     {
-      "dummy": {
-        "title": "Dummy",
-        "description": "Dummy nodes",
-        "icon": "box"
-      }
+      "id": "dummy",
+      "title": "Dummy",
+      "description": "Dummy nodes",
+      "icon": "box",
+      "color": "border-gray-500"
     }
   ],
   "nodes": [
@@ -30,10 +30,7 @@
         "description": "An engine-agnostic dummy node that displays hardcoded text.",
         "display_name": "Dummy Text Node",
         "icon": "typography",
-        "tags": [
-          "dummy",
-          "text"
-        ]
+        "tags": ["dummy", "text"]
       }
     }
   ],
