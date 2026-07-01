@@ -12,15 +12,14 @@
       "pip_dependencies": []
     }
   },
-  "categories": [
-    {
-      "id": "dummy",
+  "categories": {
+    "dummy": {
       "title": "Dummy",
       "description": "Dummy nodes",
       "icon": "box",
       "color": "border-gray-500"
     }
-  ],
+  },
   "nodes": [
     {
       "class_name": "DummyTextNode",
