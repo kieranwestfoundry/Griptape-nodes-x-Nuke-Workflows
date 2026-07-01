@@ -23,7 +23,7 @@
   "nodes": [
     {
       "class_name": "DummyTextNode",
-      "file_path": "griptape_nodes_x_nuke_workflows/nodes/dummy_text_node.py",
+      "file_path": "griptape_nodes_x_nuke_workflows/nodes/explainerNode/dummy_text_node.py",
       "metadata": {
         "category": "dummy",
         "description": "An engine-agnostic dummy node that displays hardcoded text.",
