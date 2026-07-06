@@ -1,1 +1,1 @@
-A collection on Griptape Engine flow files for Nuke to achive certain workflows. These are example files on how to do the basics of the target workflow.
+This collection of Griptape Engine flow files for Nuke demonstrates how to achieve specific workflows.  They’re example files showing the basics of the target workflow.
