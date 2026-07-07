@@ -3,7 +3,7 @@
 # 
 # [tool.griptape-nodes]
 # name = "nuke_flux_inpainting"
-# schema_version = "0.17.0"
+# schema_version = "0.19.0"
 # engine_version_created_with = "0.84.0"
 # node_libraries_referenced = [["Griptape Nodes Advanced Media Library", "0.72.1"], ["Griptape Nodes Library", "0.76.0"]]
 # node_types_used = [["Griptape Nodes Advanced Media Library", "ClearPipelineCacheNode"], ["Griptape Nodes Advanced Media Library", "DiffusionPipelineBuilderNode"], ["Griptape Nodes Advanced Media Library", "GenerateImageNode"], ["Griptape Nodes Library", "CompareStrings"], ["Griptape Nodes Library", "DescribeImage"], ["Griptape Nodes Library", "DotNode"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "Flux2ImageGeneration"], ["Griptape Nodes Library", "Group"], ["Griptape Nodes Library", "ImageDetails"], ["Griptape Nodes Library", "IntegerInput"], ["Griptape Nodes Library", "LoadImage"], ["Griptape Nodes Library", "MathExpression"], ["Griptape Nodes Library", "Note"], ["Griptape Nodes Library", "RescaleImage"], ["Griptape Nodes Library", "SaveImage"], ["Griptape Nodes Library", "SearchReplaceText"], ["Griptape Nodes Library", "StartFlow"], ["Griptape Nodes Library", "TextInput"]]
