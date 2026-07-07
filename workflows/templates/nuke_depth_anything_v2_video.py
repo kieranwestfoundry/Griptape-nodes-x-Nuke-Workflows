@@ -7,7 +7,8 @@
 # engine_version_created_with = "0.88.0"
 # node_libraries_referenced = [["Griptape Nodes Library", "0.80.0"], ["Griptape Nodes Advanced Media Library", "0.72.1"]]
 # node_types_used = [["Griptape Nodes Advanced Media Library", "DepthAnythingForDepthEstimationVideo"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "LoadVideo"], ["Griptape Nodes Library", "Note"], ["Griptape Nodes Library", "SaveVideo"], ["Griptape Nodes Library", "StartFlow"]]
-# is_griptape_provided = false
+# is_griptape_provided = true
+# is_template = true
 # is_internal = false
 # creation_date = 2026-06-29T14:55:38.891077Z
 # last_modified_date = 2026-06-29T16:13:07.632639Z
