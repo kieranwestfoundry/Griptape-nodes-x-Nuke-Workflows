@@ -37,6 +37,8 @@
     "workflows/templates/nuke_upscale_workflow.py",
     "workflows/templates/nuke_flux_inpainting.py",
     "workflows/templates/nuke_OpenPose_Video_Detection.py",
+    "workflows/templates/nuke_veo3_first_and_last_frame.py",
     "workflows/templates/nuke_WAN_Reference_to_Video.py"
+    
   ]
 }
