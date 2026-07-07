@@ -5,7 +5,7 @@
   "metadata": {
     "author": "Kieran West",
     "description": "Nuke-specific workflow nodes for Griptape Nodes",
-    "library_version": "0.1.01",
+    "library_version": "0.1.03",
     "engine_version": "0.91.0",
     "tags": ["Griptape", "Nuke", "VFX", "Workflows"],
     "dependencies": {
