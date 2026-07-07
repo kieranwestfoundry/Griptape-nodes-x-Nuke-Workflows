@@ -10,7 +10,7 @@
 # workflows_referenced = []
 # description = "The workflow takes an input video file, passes it through an OpenPose detection model to map human body joints/poses, and outputs a new video rendering those detected poses."
 # image = "nuke_OpenPose_Video_Detection_2-header-2026-07-07.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-07-07T15:50:54.109567Z

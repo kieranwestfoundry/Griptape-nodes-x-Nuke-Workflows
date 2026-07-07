@@ -10,8 +10,8 @@
 # workflows_referenced = []
 # description = "The workflow acts as an AI video-to-video tool. It takes an initial \"reference\" video, ingests a text prompt describing a desired scene or transformation, runs it through a WAN video generation model (specifically configured here for wan2.6-r2v), and outputs a brand-new AI-generated video."
 # image = "nuke_WAN_Reference_to_Video-header-2026-07-07.png"
-# is_griptape_provided = false
-# is_template = false
+# is_griptape_provided = true
+# is_template = true
 # is_internal = false
 # creation_date = 2026-07-07T15:10:41.697365Z
 # last_modified_date = 2026-07-07T15:42:59.656748Z

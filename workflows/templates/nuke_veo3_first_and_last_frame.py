@@ -10,8 +10,8 @@
 # workflows_referenced = []
 # description = "advanced Image-to-Video generation (morphing/interpolation) using Google's Veo 3 and Veo 3.1 video models. Instead of generating a video from just a text prompt or a single image, this workflow takes two distinct keyframes and generates a smooth video sequence that bridges them together."
 # image = "nuke_veo3_first_and_last_frame_1-header-2026-07-07.png"
-# is_griptape_provided = false
-# is_template = false
+# is_griptape_provided = true
+# is_template = true
 # is_internal = false
 # creation_date = 2026-07-07T13:33:10.827717Z
 # last_modified_date = 2026-07-07T14:18:56.373467Z
