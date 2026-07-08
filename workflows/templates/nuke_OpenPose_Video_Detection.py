@@ -8,13 +8,16 @@
 # node_libraries_referenced = [["Griptape Nodes Advanced Media Library", "0.72.1"], ["Griptape Nodes Library", "0.79.0"]]
 # node_types_used = [["Griptape Nodes Advanced Media Library", "OpenPoseVideoDetection"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "LoadVideo"], ["Griptape Nodes Library", "StartFlow"]]
 # workflows_referenced = []
-# description = "The workflow takes an input video file, passes it through an OpenPose detection model to map human body joints/poses, and outputs a new video rendering those detected poses."
-# image = "nuke_OpenPose_Video_Detection_2-header-2026-07-07.png"
+# description = "The workflow takes an input video file, passes it through an OpenPose detection model to map human body joints/poses, and outputs a new video rendering those detected poses.
+
+
+"
+# image = "nuke_OpenPose_Video_Detection_4-header-2026-07-08.png"
 # is_griptape_provided = true
 # is_template = true
 # is_internal = false
-# creation_date = 2026-07-07T15:50:54.109567Z
-# last_modified_date = 2026-07-07T15:52:03.580657Z
+# creation_date = 2026-07-08T14:39:22.185075Z
+# last_modified_date = 2026-07-08T14:39:54.110975Z
 # 
 # ///
 
@@ -46,7 +49,7 @@ async def build_workflow() -> None:
     # 3. The values are serialized using pickle, which is a binary format. This makes them harder to read, but makes
     #    them consistently save and load. It allows us to serialize complex objects like custom classes, which otherwise
     #    would be difficult to serialize.
-    top_level_unique_values_dict = {'58766245-f52b-4257-8f27-fcf77492a85e': pickle.loads(b'\x80\x04\x95&\x00\x00\x00\x00\x00\x00\x00\x8c"No models downloaded \xe2\x80\x94 see badge\x94.'), '43ccb483-3a23-47ae-a4bf-6c8e79632227': pickle.loads(b'\x80\x04\x95\x04\x00\x00\x00\x00\x00\x00\x00M\x00\x01.'), '4c549178-0904-4e49-9adb-71ccc73551e3': pickle.loads(b'\x80\x04\x88.'), 'c7acf38a-8d5c-4617-8830-ca0952fde77a': pickle.loads(b'\x80\x04\x95\x14\x00\x00\x00\x00\x00\x00\x00\x8c\x10output_video.mp4\x94.'), '96fee7eb-bd82-4344-9927-45732e906463': pickle.loads(b'\x80\x04\x95\x04\x00\x00\x00\x00\x00\x00\x00\x8c\x00\x94.'), '44e81abf-e1ba-4b6a-9efa-e53f31394e5b': pickle.loads(b'\x80\x04\x89.')}
+    top_level_unique_values_dict = {'f0ce4458-2b1e-4e9d-a5b0-a4b6b4304537': pickle.loads(b'\x80\x04\x95&\x00\x00\x00\x00\x00\x00\x00\x8c"No models downloaded \xe2\x80\x94 see badge\x94.'), '053052e1-e51d-4a71-95cc-6356a55fa1ff': pickle.loads(b'\x80\x04\x95\x04\x00\x00\x00\x00\x00\x00\x00M\x00\x01.'), 'b9fac0cf-0f7f-445c-8a4a-2f8ef417a217': pickle.loads(b'\x80\x04\x88.'), '12c8cf41-2fbd-48f1-94b3-a1110b3f0d30': pickle.loads(b'\x80\x04\x95\x14\x00\x00\x00\x00\x00\x00\x00\x8c\x10output_video.mp4\x94.'), 'fdbea345-3eb2-476f-b612-6fe31ddc8a14': pickle.loads(b'\x80\x04\x95\x04\x00\x00\x00\x00\x00\x00\x00\x8c\x00\x94.'), '8170210c-13a3-4680-968a-30412e4c7d82': pickle.loads(b'\x80\x04\x89.')}
     # Create the Flow, then do work within it as context.
     flow0_name = (await GriptapeNodes.ahandle_request(CreateFlowRequest(parent_flow_name=None, flow_name='ControlFlow_1', set_as_new_context=False, metadata={}))).flow_name
     with GriptapeNodes.ContextManager().flow(flow0_name):
@@ -77,23 +80,23 @@ async def build_workflow() -> None:
         await GriptapeNodes.ahandle_request(CreateConnectionRequest(source_node_name=node1_name, source_parameter_name='input_video', target_node_name=node3_name, target_parameter_name='video', initial_setup=True))
         await GriptapeNodes.ahandle_request(CreateConnectionRequest(source_node_name=node3_name, source_parameter_name='video', target_node_name=node0_name, target_parameter_name='input_video', initial_setup=True))
         with GriptapeNodes.ContextManager().node(node0_name):
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='model', node_name=node0_name, value=top_level_unique_values_dict['58766245-f52b-4257-8f27-fcf77492a85e'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='max_dim', node_name=node0_name, value=top_level_unique_values_dict['43ccb483-3a23-47ae-a4bf-6c8e79632227'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='black_background', node_name=node0_name, value=top_level_unique_values_dict['4c549178-0904-4e49-9adb-71ccc73551e3'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='no_audio', node_name=node0_name, value=top_level_unique_values_dict['4c549178-0904-4e49-9adb-71ccc73551e3'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='output_video_file', node_name=node0_name, value=top_level_unique_values_dict['c7acf38a-8d5c-4617-8830-ca0952fde77a'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='model', node_name=node0_name, value=top_level_unique_values_dict['f0ce4458-2b1e-4e9d-a5b0-a4b6b4304537'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='max_dim', node_name=node0_name, value=top_level_unique_values_dict['053052e1-e51d-4a71-95cc-6356a55fa1ff'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='black_background', node_name=node0_name, value=top_level_unique_values_dict['b9fac0cf-0f7f-445c-8a4a-2f8ef417a217'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='no_audio', node_name=node0_name, value=top_level_unique_values_dict['b9fac0cf-0f7f-445c-8a4a-2f8ef417a217'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='output_video_file', node_name=node0_name, value=top_level_unique_values_dict['12c8cf41-2fbd-48f1-94b3-a1110b3f0d30'], initial_setup=True, is_output=False))
         with GriptapeNodes.ContextManager().node(node1_name):
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='input_video', node_name=node1_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='max_dim', node_name=node1_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='max_frames', node_name=node1_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='black_background', node_name=node1_name, value=top_level_unique_values_dict['4c549178-0904-4e49-9adb-71ccc73551e3'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='output_path', node_name=node1_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='input_video', node_name=node1_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='max_dim', node_name=node1_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='max_frames', node_name=node1_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='black_background', node_name=node1_name, value=top_level_unique_values_dict['b9fac0cf-0f7f-445c-8a4a-2f8ef417a217'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='output_path', node_name=node1_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=False))
         with GriptapeNodes.ContextManager().node(node2_name):
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='was_successful', node_name=node2_name, value=top_level_unique_values_dict['44e81abf-e1ba-4b6a-9efa-e53f31394e5b'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='output_video', node_name=node2_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='was_successful', node_name=node2_name, value=top_level_unique_values_dict['8170210c-13a3-4680-968a-30412e4c7d82'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='output_video', node_name=node2_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=False))
         with GriptapeNodes.ContextManager().node(node3_name):
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='path', node_name=node3_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=False))
-            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='path', node_name=node3_name, value=top_level_unique_values_dict['96fee7eb-bd82-4344-9927-45732e906463'], initial_setup=True, is_output=True))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='path', node_name=node3_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=False))
+            await GriptapeNodes.ahandle_request(SetParameterValueRequest(parameter_name='path', node_name=node3_name, value=top_level_unique_values_dict['fdbea345-3eb2-476f-b612-6fe31ddc8a14'], initial_setup=True, is_output=True))
 
 async def _ensure_workflow_context():
     context_manager = GriptapeNodes.ContextManager()

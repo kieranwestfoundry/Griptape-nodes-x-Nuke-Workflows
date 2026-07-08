@@ -5,21 +5,26 @@
   "metadata": {
     "author": "Kieran West",
     "description": "Nuke-specific workflow nodes for Griptape Nodes",
-    "library_version": "0.1.03",
+    "library_version": "0.1.04",
     "engine_version": "0.91.0",
     "tags": ["Griptape", "Nuke", "VFX", "Workflows"],
     "dependencies": {
-      "pip_dependencies": []
+      "pip_dependencies": [],
+      "library_dependencies": {
+        "Griptape Nodes Library": "0.81.0"
+      }
     }
   },
-  "categories": [{
-    "dummy": {
-      "title": "Dummy",
-      "description": "Dummy nodes",
-      "icon": "box",
-      "color": "border-gray-500"
+  "categories": [
+    {
+      "dummy": {
+        "title": "Dummy",
+        "description": "Dummy nodes",
+        "icon": "box",
+        "color": "border-gray-500"
+      }
     }
-  }],
+  ],
   "nodes": [
     {
       "class_name": "DummyTextNode",
@@ -39,6 +44,5 @@
     "workflows/templates/nuke_OpenPose_Video_Detection.py",
     "workflows/templates/nuke_veo3_first_and_last_frame.py",
     "workflows/templates/nuke_WAN_Reference_to_Video.py"
-    
   ]
 }

@@ -5,7 +5,7 @@
 # name = "nuke_WAN_Reference_to_Video"
 # schema_version = "0.19.1"
 # engine_version_created_with = "0.86.0"
-# node_libraries_referenced = [["Griptape Nodes Library", "0.79.0"]]
+# node_libraries_referenced = [["Griptape Nodes Library", "0.81.0"]]
 # node_types_used = [["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "LoadVideo"], ["Griptape Nodes Library", "SaveVideo"], ["Griptape Nodes Library", "StartFlow"], ["Griptape Nodes Library", "WanReferenceToVideoGeneration"]]
 # workflows_referenced = []
 # description = "The workflow acts as an AI video-to-video tool. It takes an initial \"reference\" video, ingests a text prompt describing a desired scene or transformation, runs it through a WAN video generation model (specifically configured here for wan2.6-r2v), and outputs a brand-new AI-generated video."
