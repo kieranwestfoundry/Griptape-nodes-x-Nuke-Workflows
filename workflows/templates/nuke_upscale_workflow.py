@@ -4,7 +4,7 @@
 # [tool.griptape-nodes]
 # name = "nuke_upscale_workflow"
 # schema_version = "0.20.0"
-# engine_version_created_with = "0.84.0"
+# engine_version_created_with = "0.91.0"
 # node_libraries_referenced = [["Griptape Nodes Advanced Media Library", "0.72.1"], ["Griptape Nodes Library", "0.81.0"]]
 # node_types_used = [["Griptape Nodes Advanced Media Library", "ClearPipelineCacheNode"], ["Griptape Nodes Advanced Media Library", "DiffusionPipelineBuilderNode"], ["Griptape Nodes Advanced Media Library", "GenerateImageNode"], ["Griptape Nodes Library", "CompareStrings"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "LoadImage"], ["Griptape Nodes Library", "Math"], ["Griptape Nodes Library", "SaveImage"], ["Griptape Nodes Library", "SeedVRImageUpscale"], ["Griptape Nodes Library", "StartFlow"], ["Griptape Nodes Library", "ToInteger"], ["Griptape Nodes Library", "ToText"]]
 # is_griptape_provided = true
