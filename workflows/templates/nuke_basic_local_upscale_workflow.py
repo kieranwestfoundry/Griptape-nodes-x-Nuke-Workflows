@@ -10,7 +10,7 @@
 # workflows_referenced = []
 # description = "This workflow is a specialized template designed to execute localized image upscaling directly inside a Foundry Nuke compositing pipe using a Flux latent diffusion model (FLUX.1-schnell) and dedicated upscaling model networks (Kim2091/ClearRealityV1)."
 # image = "libraries_griptape-nodes-x-nuke-workflows_workflows_templates_nuke_basic_local_upscale_workflow-header-2026-07-08.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-07-07T19:12:18.477745Z

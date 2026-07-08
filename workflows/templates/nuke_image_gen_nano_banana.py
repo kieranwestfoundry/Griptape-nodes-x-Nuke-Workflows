@@ -9,7 +9,7 @@
 # node_types_used = [["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "GoogleImageGeneration"], ["Griptape Nodes Library", "StartFlow"]]
 # description = "a very simple image generation workflow. Uses Nano Banana from Google"
 # image = "nuke_image_gen_nano_banana-header-2026-07-08.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-07-03T21:32:14.046629Z

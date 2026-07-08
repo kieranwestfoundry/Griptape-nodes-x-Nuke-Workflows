@@ -9,7 +9,7 @@
 # node_types_used = [["Griptape Nodes Advanced Media Library", "DinoSam2VideoDetector"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "Group"], ["Griptape Nodes Library", "LoadVideo"], ["Griptape Nodes Library", "SaveVideo"], ["Griptape Nodes Library", "StartFlow"]]
 # description = "The `Nuke_Video_Mask_G-DINO___SAM2` workflow is an automated rotoscoping and video segmentation template designed to generate highly accurate matte passes from text descriptions within a Nuke pipeline. The execution pipes an input video sequence through a `LoadVideo` node and leverages Grounding DINO to automatically detect the target asset, translating the user's text prompt into localized bounding boxes on a single designated anchor frame. Meta's Segment Anything Model 2 (SAM2) then processes those initial bounding boxes to seamlessly track and propagate the resulting alpha mask forward and backward across all remaining frames in the shot. Finally, the completed black-and-white tracking matte is exported to disk via a `SaveVideo` node, giving compositors an efficient, hands-free alternative to manual rotoscoping."
 # image = "Nuke_Video_Mask_G-DINO___SAM2-header-2026-07-08.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-06-19T17:31:55.852507Z

@@ -10,7 +10,7 @@
 # workflows_referenced = []
 # description = "OpenPose is an AI system that detects human body poses in videos or images by automatically mapping out digital skeletons of multiple people at once. It uses a \"bottom-up\" approach, meaning it first locates all individual keypoints—like elbows, wrists, eyes, and fingers—across an entire image, and then intelligently connects them to form distinct skeletons. Capable of tracking up to 135 points per person in real-time (covering the body, facial expressions, and detailed hand movements), it is widely used for motion capture in video games, athletic form analysis, and controlling character geometry in generative AI tools like Stable Diffusion."
 # image = "nuke_OpenPose_Video_Detection_3-header-2026-07-08.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-07-08T11:45:06.499918Z

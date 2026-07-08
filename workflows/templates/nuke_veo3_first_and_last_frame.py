@@ -9,7 +9,7 @@
 # node_types_used = [["Griptape Nodes Library", "Agent"], ["Griptape Nodes Library", "CreateAgentSchema"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "JsonExtractValue"], ["Griptape Nodes Library", "LoadImage"], ["Griptape Nodes Library", "MergeTexts"], ["Griptape Nodes Library", "SaveVideo"], ["Griptape Nodes Library", "StartFlow"], ["Griptape Nodes Library", "ToJson"], ["Griptape Nodes Library", "ToText"], ["Griptape Nodes Library", "Veo3VideoGeneration"]]
 # description = "advanced Image-to-Video generation (morphing/interpolation) using Google's Veo 3 and Veo 3.1 video models. Instead of generating a video from just a text prompt or a single image, this workflow takes two distinct keyframes and generates a smooth video sequence that bridges them together.\"\n"
 # image = "nuke_veo3_first_and_last_frame-header-2026-07-08.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-06-29T17:48:52.568918Z

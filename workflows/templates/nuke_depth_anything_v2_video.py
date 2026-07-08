@@ -9,7 +9,7 @@
 # node_types_used = [["Griptape Nodes Advanced Media Library", "DepthAnythingForDepthEstimationVideo"], ["Griptape Nodes Library", "EndFlow"], ["Griptape Nodes Library", "LoadVideo"], ["Griptape Nodes Library", "Note"], ["Griptape Nodes Library", "SaveVideo"], ["Griptape Nodes Library", "StartFlow"]]
 # description = "The 'Nuke_Depth_Anything_V2_Video' Griptape Workflow is designed to automate and simplify the complex process of generating high-quality depth maps for video assets, a critical task for compositing artists working with 3D and VFX. It ingests raw video content (either a path or URL) and utilizes a specialized Griptape node running the Depth Anything V2 model from HuggingFace, specifically optimized for multi-frame video depth estimation and temporal coherence. This AI core creates depth maps per frame, which are automatically processed and saved as a depth video sequence, allowing compositing artists to instantly generate accurate Z-depth passes for realistic defocus effects, 3D camera projections, volume rendering, and relighting within a digital compositing environment, all without complex manual tracking or depth geometry reconstruction."
 # image = "nuke_depth_anything_v2_video-header-2026-07-08.png"
-# is_griptape_provided = false
+# is_griptape_provided = true
 # is_template = true
 # is_internal = false
 # creation_date = 2026-06-29T14:55:38.891077Z
